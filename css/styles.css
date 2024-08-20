@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 ::before,
 ::after{
     margin: 0;
@@ -11,8 +12,174 @@ body{
     font-family: sans-serif;
     color: rgb(255, 255, 255);
     background: #420fe7;
+    padding: auto;
+    /* overflow: hidden; */
     /* background: rgb(29, 29, 29); */
 }
+#contenedor {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1500px;
+}
+.letterJ {
+    width: 100px;
+    height: 150px;
+    fill: none;
+    stroke: black;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    margin-top: 30px;
+    margin-left: 20px;
+    animation:  1s ease-in-out;
+    position: relative;
+}
+
+.pagina {
+
+    margin-top: 0;
+    /* margin-left: -72px; */
+    position: absolute;
+    /* top: -19px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10PX;
+    transition: transform 1s, opacity 1s;
+    transform-style: preserve-3d;
+
+    /* box-shadow: inset 0 0 150px rgba(1, 1, 0.1, 1); */
+    /* transition-timing-function: steps(4); */
+
+}
+
+#pagina1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(#1435f0, #2f3064);
+    background: #420fe7;
+    
+    background-attachment: fixed;
+    z-index: 2;
+}
+
+
+#pagina2 {
+    background-color: rgb(241, 225, 225);
+    opacity: 1;
+    z-index: 1;
+    backface-visibility: hidden;
+    background: #420fe7;
+    display: block;
+    transition: opacity 1s;
+}
+
+.circulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    position: absolute;
+    border-radius: 50%;
+}
+.c-one{
+    width: 250px;
+    height: 250px;
+    /* border-left: 5px solid #fff; */
+    animation:  1s linear infinite;
+}
+
+.c-two{
+    width: 200px;
+    height: 200px;
+    /* border-right: 5px solid #fff; */
+    animation:  1s  linear infinite;
+}
+.c-three{
+    width: 150px;
+    height: 150px;
+    /* border-top: 3px solid #fff; */
+    animation:  1s  linear infinite;
+}
+
+@keyframes righrotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes leftrotate{
+    0%{
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes righrotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes leftrotate {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.rotate {
+    animation: rotate360 1s ease-in-out forwards;
+}
+
+.righrotate {
+    animation: righrotate 1s linear infinite;
+}
+
+.leftrotate {
+    animation: leftrotate 1s linear infinite;
+}
+
+.flip {
+    transform: rotateY(-90deg) rotate(0deg) translateX(-400vw) scale(0.5);
+    transition: transform 1s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+}
+
 header{
     width: 95%;
     height: 10vh;
@@ -61,7 +228,7 @@ header{
 
 .aside{
     width: 100%;
-    height: 0%;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -199,6 +366,21 @@ header{
     letter-spacing: 3px;
     font-size: 14px;
     position: relative;
+}
+#botonInicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99.5vw;
+    height: 100vh;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
 }
 
 .contact-button{
