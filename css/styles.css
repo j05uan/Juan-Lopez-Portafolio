@@ -435,8 +435,26 @@ h2{
 .fake-magicwall ul li:hover a.colorbox{
     transform: scale(0.6);
     opacity: 1;
-
 }
+#section-about{
+    padding-left:1.5rem;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.text-zone-3 p{
+    margin-bottom: 15px;
+    line-height: 1.5rem;
+}
+.tech{
+    text-decoration: none;
+    color: #08fdd8;
+    
+}
+
 @media screen and (min-width: 950px) {
     header{
         justify-content: flex-end;
@@ -509,27 +527,90 @@ h2{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-left: 13rem;
+
+
     }
     #header{
         font-size: 2.5rem;
+        padding-left: 11rem;
+    }
+    #case{
+        top: 300px;
     }
     .text-zone-2 p{
         width: 700px;
         font-size: 14px;
         line-height: 1.5rem ;
     }
+    .text-zone-2 {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .text-zone-2 .contact-button .buttoemai {
+        display: inline-block;
+        position: relative;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        /* width: 100vw; */
+    }
+    #email{
+        padding-top: 0;
+        padding-left: 6px;
+        padding-bottom: 0;
+        padding-right: 180px;
+        top: -35px;
+        left: 800px;
+        display: flex;
+        justify-content: space;
+    }
+    .icon{
+        padding-left: 8px;
+    }
+    
+    .contact-button div {
+        position: relative;
+        z-index: 1;
+    }
+    
     .fake-big-2{
-        font-size: 25rem;
+        font-size: 19rem;
         font-weight: 700;
-        left: 560px;
-        top: 0;
+        left: 260px;
+        top: 700px;
     }
     .fake-magicwall{
-        padding-left: 0.5rem;
+        padding-left: 10rem;
+        
     }
+    
     .fake-magicwall ul li{
         width: 242px;
         height: 236px;
+        margin-left: 4rem;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+    #section-about{
+        flex-direction: row;
+        padding-left: 13rem;
+    }
+    .text-zone3 #header {
+        width: 50px;
+        font-size: 3rem;
+    }
+    .text-zone3 p{
+        width: 400px;
+    }
+    .skills-charts{
+        margin-right: 70px;
         
     }
 }
