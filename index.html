@@ -7,7 +7,7 @@
     <title>Juan Pablo Portafolio</title>
     <meta name="title" content="I'm  Juan Pablo López Amaya —  Full Stack Developer / UX Designer">
     <meta name="description" content="I'm  Juan Pablo López Amaya —  Full Stack Developer / UX Designer">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/all.win.css">
 </head>
@@ -115,20 +115,18 @@
 
     <section id="section-works">
         <div id="header">
-            <h2>Casos de Estudio & Proyectos</h2>
+            <h2 id="case">Case Studies & Projects</h2>
         </div>
         <div class="text-zone-2">
             <div>
-                <p>Compilacion de <a href="#">mi trabajo</a></p>
+                <p>A small gallery of some projects I have worked on.</p>
             </div>
-            <a href="#" class="contact-button">
-                <div>
+            <a href="#" class="contact-button" class="buttoemai">
+                <div id="email">
                     <span class="bg"></span>
                     <span class="base"></span>
-                    <span class="text">
-                        Contact me!
-                    </span>
-
+                    <span class="icon"><i class="bi bi-envelope"></i></span>
+                    <span class="text">lopezamayajuanpablo@gmail.com</span>
                 </div>
             </a>
         </div>
@@ -165,6 +163,50 @@
             </li>
         </ul>
     </section>
+
+    <section id="section-about">
+
+        <div class="text-zone3">
+            <div id="header2">
+                <h2>Me, Myself and I</h2>
+            </div>
+            <div id="textp">
+                <p>Since I was young, I’ve been impressed by the skills required to be a programmer and intrigued by the underlying details of every application, from backend to frontend.
+                    I admire the work involved in each layer and am motivated to learn it. Currently,
+                </p>
+                <p>
+                    I am in my first programming bootcamp, marking my entry into
+                    <a href="#" class="tech"> the world of web technologies</a> 
+                    Throughout this process, I have learned the importance of consistent practice and maintaining a mindset of continuous learning.
+                    I am excited to continue growing and exploring every aspect of technological development.
+                </p>
+            </div>
+        </div>
+
+        <div class="skills-charts">
+            <div id="myCanvasContainer">
+                <canvas width="500" height="500" id="myCanvas">
+                    <ul id="tags">
+                        <li><a href="#" target="_blank">HTML</a></li>
+                        <li><a href="#" target="_blank">CSS</a></li>
+                        <li><a href="#" target="_blank">JavaScript</a></li>
+                        <li><a href="#" target="_blank">Java</a></li>
+                        <li><a href="#" target="_blank">MySQL</a></li>
+                        <li><a href="#" target="_blank">JSON</a></li>
+                        <li><a href="#" target="_blank">Python</a></li>
+                        <li><a href="#" target="_blank">PostgreSQL</a></li>
+                        <li><a href="#" target="_blank">Spring Boot</a></li>
+                        <li><a href="#" target="_blank">GitHub</a></li>
+                        <li><a href="#" target="_blank">bootstrap</a></li>
+                        <li><a href="#" target="_blank">Postman</a></li>
+
+                    </ul>
+                </canvas>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./apps/jquery.tagcanvas.js"></script>
     <script src="apps\index.js"></script>
 </body>
 </html>
