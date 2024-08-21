@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/all.win.css">
 </head>
 <body>
+    
+
         <section class="pagina" id="pagina1">
             <div class="frame">
                 <div class="circulo">
@@ -28,14 +30,15 @@
             </div>
             <button onclick="start()" id="botonInicio"></button>
         </section>
+    <section id="contenedor">
         <section class="pagina" id="pagina2">
             
-            <header>
+            <header id="headerr">
                 <div id="sound">
                     <audio id="myAudio">
                         <source src="./Night.mp3">
                     </audio>
-                    <i class="fab fa-soundcloud sound-cloud"></i>
+                    <i class="bi bi-music-note-list"></i>
                     <span>Sound</span>
                     <div class="on-off">
                         <span id="off">OFF</span>
@@ -43,8 +46,8 @@
                     </div>
                 </div>
                 <div class="btns-container">
-                    <i class="fas fa-bars bars"></i>
-                    <i class="fas fa-times times"></i>
+                    <i class="bi bi-list"></i>
+                    <i class="bi bi-backspace"></i>
                 </div>
             </header>
 
@@ -68,12 +71,12 @@
                     <ul class="social-icons">
                         <li>
                             <a href="">
-                                <i class="fab fa-linkedin-in"></i>
+                                <i class="bi bi-linkedin"></i>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <i class="fab fa-github"></i>
+                                <i class="bi bi-github"></i>
                             </a>
                         </li>
                         <li>
@@ -225,7 +228,7 @@
             </section>
 
         </section>
-
+    </section>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="./apps/jquery.tagcanvas.js"></script>
     <script src="apps\index.js"></script>

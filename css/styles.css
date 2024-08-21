@@ -16,12 +16,7 @@ body{
     /* overflow: hidden; */
     /* background: rgb(29, 29, 29); */
 }
-#contenedor {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    perspective: 1500px;
-}
+
 .letterJ {
     width: 100px;
     height: 150px;
@@ -39,9 +34,7 @@ body{
 .pagina {
 
     margin-top: 0;
-    /* margin-left: -72px; */
     position: absolute;
-    /* top: -19px; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -50,10 +43,6 @@ body{
     border-radius: 10PX;
     transition: transform 1s, opacity 1s;
     transform-style: preserve-3d;
-
-    /* box-shadow: inset 0 0 150px rgba(1, 1, 0.1, 1); */
-    /* transition-timing-function: steps(4); */
-
 }
 
 #pagina1 {
@@ -62,7 +51,6 @@ body{
     background-size: cover;
     background: linear-gradient(#1435f0, #2f3064);
     background: #420fe7;
-    
     background-attachment: fixed;
     z-index: 2;
 }
@@ -76,6 +64,8 @@ body{
     background: #420fe7;
     display: block;
     transition: opacity 1s;
+    overflow: hidden;
+    
 }
 
 .circulo{
@@ -199,7 +189,7 @@ header{
     align-items: center;
     color: #fff;
 }
-.sound-cloud{
+.bi .bi-music-note-list{
     font-size: 1.2em;
     color: 7px;
     color: #f50057;
@@ -225,6 +215,10 @@ header{
 .btns-container .fas:nth-child(2){
     display: none;
 }
+.bi-backspace{
+    display: none;
+    z-index: 50;
+}
 
 .aside{
     width: 100%;
@@ -235,11 +229,12 @@ header{
     overflow: hidden;
     background-color: #420fe7;
     z-index: 1;
+   
 }
 .show-nav{
     height: 100%;
     overflow: visible;
-
+    /* display: none; */
 }
 .aside-wrapper{
     height: 100vh;
@@ -247,7 +242,7 @@ header{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    
+     /* display: none; */
 }
 
 .logo-section{
@@ -516,12 +511,10 @@ header{
     
 }
 tspan{
-    font-size: 1.2vw;
+    font-size: 1vw;
     line-height: 14vw;
     white-space: inherit;
     letter-spacing: 1px;
-
-
 }
 .gray-text {
     color: gray;
@@ -637,17 +630,38 @@ h2{
     
 }
 
+@media screen and (max-width: 2000px) {
+    tspan{
+        font-size: 2.5vw;
+        line-height: 10vw;
+        white-space: inherit;
+        letter-spacing: .8px;
+    }
+    .aside{
+        display: none;
+    }
+    .bi-backspace{
+        display: none;
+        z-index: 100;
+    }
+}
 @media screen and (min-width: 950px) {
     header{
         justify-content: flex-end;
     }
     .btns-container{
         display: none;
-
+    }
+    tspan{
+        font-size: 1vw;
+        line-height: 14vw;
+        white-space: inherit;
+        letter-spacing: 1px;
     }
     .aside{
         width: 10%;
         height: 100%;
+        display: none;
     }
     .aside-wrapper{
         height: 80%;

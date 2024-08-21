@@ -1,4 +1,4 @@
-const soundCloud = document.querySelector('.sound-cloud');
+const soundCloud = document.querySelector('.bi ');
 const off = document.querySelector('#off');
 const on = document.querySelector('#on');
 const myAudio = document.querySelector('#myAudio');
@@ -21,11 +21,13 @@ const soundTrack = (soundState) => {
     }
 }
 
-// Play music functionality
 
-const btnBars = document.querySelector('.bars');
-const btnTimes = document.querySelector('.times');
+
+const btnTimes = document.querySelector('.bi-backspace' );
+const btnBars = document.querySelector('.bi-list');
 const SideNav = document.querySelector('.aside');
+const container =document.getElementById('headerr');
+const aside =document.querySelector('aside-wrapper');
 
 
 btnBars.addEventListener('click', () => myFunc('open'));
@@ -34,13 +36,20 @@ btnTimes.addEventListener('click', () => myFunc('close'));
 const myFunc = (navCondition) => {
     if(navCondition === 'open'){
         SideNav.classList.add('show-nav');
+        SideNav.style.display="block"
         btnTimes.style.display = "block";
         btnBars.style.display = "none";
+        container.style.zIndex='40';
+        SideNav.style.zIndex='30';
+
+       
     }
     else if(navCondition === 'close'){
             SideNav.classList.remove('show-nav');
             btnTimes.style.display = "none";
             btnBars.style.display = "block";
+            SideNav.style.display='none';
+            aside.style.zIndex='1';
     }
 }
 
@@ -53,7 +62,6 @@ $(document).ready(function (){
         maxSpeed: 0.05,
         weight: true,
     }, "tags")){
-        // something went wrong hide the canvas container,
         $("#myCanvasContainer");
     }
 })
@@ -61,18 +69,19 @@ function flipPage() {
     const pagina1 = document.getElementById('pagina1');
     const pagina2 = document.getElementById('pagina2');
     const derechaInicio = document.getElementById('derechaInicio');
+    const container =document.getElementById('pagina2');
 
     pagina1.classList.add('flip');
-    derechaInicio.classList.add('flip2');
 
     setTimeout(() => {
         pagina1.style.zIndex = '1';
         pagina2.style.zIndex = '2';
         pagina2.style.backfaceVisibility = 'visible';
         pagina1.style.backfaceVisibility = 'hidden';
+        container.style.overflow = 'visible';
 
         pagina2.classList.add('show');
-    }, 1000); // Tiempo debe coincidir con la animación de flip
+    }, 1000); 
 }
 
 function start() {
@@ -80,8 +89,9 @@ function start() {
     const circulo1 = document.getElementById('circulo1');
     const circulo2 = document.getElementById('circulo2');
     const circulo3 = document.getElementById('circulo3');
+    const container =document.getElementById('pagina2');
 
-    // Añadir animaciones
+    container.style.overflow = 'visible';
     logo.classList.add('rotate');
     circulo1.classList.add('righrotate');
     circulo1.style.borderLeft='5px solid #fff';
@@ -90,12 +100,10 @@ function start() {
     circulo3.classList.add('righrotate');
     circulo3.style.borderTop='3px solid #fff';
 
-    // Después de 1 segundo (coincidiendo con la animación de rotación del logo) iniciar el cambio de página
     setTimeout(() => {
         flipPage();
-    }, 1000); // Tiempo debe coincidir con la animación de rotate
+    }, 1000); 
 }
 
-// Añadir un listener para el clic en cualquier parte de la página
 document.addEventListener('click', start);
 
