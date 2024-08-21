@@ -726,6 +726,10 @@ h2{
     align-items: center;
     
 }
+.hover-content p{
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .fake-magicwall .project:hover a.colorbox{
     transform: scale(0.6);
     opacity: 1;
@@ -920,10 +924,13 @@ h2{
         width: 700px;
         font-size: 14px;
         line-height: 1.5rem ;
+        padding-left: 0px;
     }
     .text-zone-2 {
         position: relative;
         display: inline-block;
+        top:-60px
+
     }
     
     .text-zone-2 .contact-button .buttoemai {
@@ -942,8 +949,8 @@ h2{
         padding-left: 6px;
         padding-bottom: 0;
         padding-right: 180px;
-        top: -35px;
-        left: 800px;
+        top: -10px;
+        left: 40px;
         display: flex;
         justify-content: space;
     }
