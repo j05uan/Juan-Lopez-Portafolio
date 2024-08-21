@@ -171,6 +171,7 @@ body{
 }
 
 header{
+    padding: 2rem;;
     width: 95%;
     height: 10vh;
     margin: auto;
@@ -179,6 +180,8 @@ header{
     align-items: center;
     position: fixed;
     z-index: 2;
+    top: 0;
+    height: 0;
 }
 
 #sound{
@@ -226,9 +229,9 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #420fe7;
-    z-index: 1;
+    z-index: 1000;
    
 }
 .show-nav{
@@ -539,8 +542,7 @@ tspan{
     position: absolute;
     color: #fff;
     left: 10px;
-    /* top: 850px; */
-    bottom: -70px;
+    bottom: -60px;
     letter-spacing: -10px;
     z-index: -999;
     opacity: 0.1;
@@ -548,58 +550,123 @@ tspan{
 h2{
     font-family: "Averta",sans-serif;
     font-size: 9vw;
-    /* line-height: 9.4vw; */
     color: rgba(0,0,0,0);
     -webkit-text-stroke: 1px #CECAE3;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility
+    text-rendering: optimizeLegibility;
+    margin-top: 0px;
+}
+#home-magicwall{
+    margin: 0;  
+    max-height: 300vh;
 }
 .fake-magicwall{
     background-color: rgb(255, 255, 255, 0.1);
     overflow: hidden;
+    display: block;
+    justify-content: space-between;
+    padding-left: 30rem;
+    padding: 0; 
+    margin: 0;
+    max-height: 100vh;
 }
-.fake-magicwall ul{
+.fake-magicwall .project{
     list-style: none;
     display: flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    flex-wrap: wrap;
+    margin: 0;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+    border: 2px solid transparent;
 
 }
-.fake-magicwall ul li{
-    width: 161px;
-    height: 160px;
+.fake-magicwall .project{
+    width: 41vw;
+    height: 80vh;
     position: relative;
     overflow: hidden;
-    display: list-item;
 }
+ .project-1 {
+    right: -320px;
+}
+
+.project-2 .magic-wall_item .lazyload{
+    width: 70%;
+    height: 90vh;
+}
+
+.fake-magicwall .project-2{
+    width: 35%;
+    height: 90vh;  
+    top: -350px;
+    right: 360px ;
+}
+.project-3{
+    top: -550px;
+    right: -280px;
+}
+.fake-magicwall .project-4{
+    width: 40%;
+
+}
+.project-4{
+    top: -760px;
+    right: 400px;
+
+}
+.fake-magicwall .project-5{
+    width: 60%;
+
+}
+.project-5{
+    top: -1040px; 
+    right: -180px;
+} 
+
 .magic-wall_item{
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
+    bottom: 0; 
     right: 0;
     transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opcaity 0.5s, -webkit-transform 0.5s;
+    display: block;
+    justify-content: space-between;
+    justify-content: center;
 }
 .fake-magicwall img{
     width: 100%;
-    height: 100%;
+    height: 60%;
     object-fit: cover;
+}.fake-magicwall .project:hover{
+    border: .5px solid #fff ;
+    transition: rotateY(10deg) ;
+    transition: all .5s ease-in;
 }
-.fake-magicwall ul li:hover .magic-wall_item{
+.fake-magicwall .project:hover .magic-wall_item{
     transform: scale(1.14);
     -ms-transform: scale(1.4);
     -webkit-transform: scale(1.14);
+    transition: all .6s ease-in;
+
+    /* z-index: 100; */
 }
-.fake-magicwall ul li a.colorbox{
+.fake-magicwall .project:hover .description{
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transition: all .7s ease-in;
+
+}
+.fake-magicwall .project a.colorbox{
     display: block;
     position: absolute;
     top: 0; 
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 65%;
     background: url(../circle.png) no-repeat center;
     opacity: 0;
     transition: all 15s ease-out;
@@ -607,7 +674,14 @@ h2{
     -webkit-transition: all 150ms ease-out;
     transform: scale(0.6);
 }
-.fake-magicwall ul li:hover a.colorbox{
+.hover-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.fake-magicwall .project:hover a.colorbox{
     transform: scale(0.6);
     opacity: 1;
 }
@@ -621,16 +695,69 @@ h2{
     position: relative;
 }
 .text-zone-3 p{
-    margin-bottom: 15px;
+    margin-bottom:30px;
     line-height: 1.5rem;
+}
+#header2 h2{
+    margin-bottom: 25px;
+    -webkit-text-stroke: 1px rgb(223, 146, 137);
+
+
+}
+#textp{
+    margin-bottom: 35px;
+
 }
 .tech{
     text-decoration: none;
     color: #08fdd8;
     
 }
+#contact {
+    padding: 2rem;
+    background-color: #fff; /* O el color que prefieras */
+    color: #333;
+}
 
-@media screen and (max-width: 2000px) {
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #08fdd8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.contact-button2:hover {
+    background-color: #06c1a3;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #08fdd8;
+    margin-bottom: 0.5rem;
+}
+
+.social-links a:hover {
+    color: #06c1a3;
+}
+@media screen and (max-width: 1000px) {
     tspan{
         font-size: 2.5vw;
         line-height: 10vw;
@@ -661,7 +788,7 @@ h2{
     .aside{
         width: 10%;
         height: 100%;
-        display: none;
+        /* display: none; */
     }
     .aside-wrapper{
         height: 80%;
@@ -696,13 +823,16 @@ h2{
         font-size: 1rem;
     }
     .scroll-down{
-        right: -30px;
-        bottom: 3.3rem;
+        right: -25px;
+        bottom: 5rem;
     }
     .scroll-down--left{
         left: 110px;
         right: auto;
-        margin-left: 7px;
+        margin-left: 9px;
+    }
+    .bi .bi-arrow-down{
+        transform: rotateY(360deg);
     }
     .text-zone h1{
         font-size: 5rem;
@@ -785,7 +915,7 @@ h2{
         
     }
     
-    .fake-magicwall ul li{
+    .project{
         width: 242px;
         height: 236px;
         margin-left: 4rem;
