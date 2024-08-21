@@ -53,7 +53,12 @@ body{
     background: #420fe7;
     background-attachment: fixed;
     z-index: 2;
+    overflow: hidden;
 }
+#contact h2{
+    -webkit-text-stroke: 1px #420fe7;
+}
+
 
 
 #pagina2 {
@@ -172,7 +177,7 @@ body{
 
 header{
     padding: 2rem;;
-    width: 95%;
+    width: 90%;
     height: 10vh;
     margin: auto;
     display: flex;
@@ -332,6 +337,25 @@ header{
     margin: 0;
     /* letter-spacing: .4rem; */
     z-index: 20;
+}
+.text-zone-2 .contact-button .buttoemai {
+    display: inline-block;
+    position: relative;
+    /* padding: 120px 20px; */
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    /* width: 200vw;  */
+}
+#email{
+    padding-left: 6px;
+    padding-bottom: 0;
+    padding-right: 180px;
+    left: 80px;
+    display: flex;
+    justify-content: space;
 }
 .text-zone h1::before{
     content: '<h1>';
@@ -535,9 +559,10 @@ tspan{
 }
 .text-zone-2 p{
     line-height: 1.5;
+    padding-left: 60px;
 }
 .fake-big-2{
-    font-size: 12rem;
+    font-size: 8rem;
     font-weight: 700;
     position: absolute;
     color: #fff;
@@ -571,6 +596,12 @@ h2{
     margin: 0;
     max-height: 100vh;
 }
+
+
+
+
+@media screen and (max-width:600px){ 
+    
 .fake-magicwall .project{
     list-style: none;
     display: flex;
@@ -587,27 +618,38 @@ h2{
     position: relative;
     overflow: hidden;
 }
+.fake-magicwall .project-1{
+    width: 60%;
+    height: 50vh;
+    right: 200px ;
+    top: -20px;
+}
+.fake-magicwall .project-1 .hover-content p{
+    padding-left: 15px;
+}
  .project-1 {
-    right: -320px;
+    right: 70px;
 }
 
-.project-2 .magic-wall_item .lazyload{
-    width: 70%;
-    height: 90vh;
-}
+
 
 .fake-magicwall .project-2{
-    width: 35%;
-    height: 90vh;  
-    top: -350px;
-    right: 360px ;
+    width: 60%;
+    height: 50vh;  
+    top: -40px;
+    right: 200px ;
 }
-.project-3{
-    top: -550px;
-    right: -280px;
+.fake-magicwall .project-3{
+    width: 60%;
+    height: 50vh;
+    right: 200px ;
+    top: -20px;
 }
 .fake-magicwall .project-4{
-    width: 40%;
+    width: 60%;
+    height: 50vh;
+    right: 200px ;
+    top: -20px;
 
 }
 .project-4{
@@ -617,13 +659,16 @@ h2{
 }
 .fake-magicwall .project-5{
     width: 60%;
+    height: 50vh;
+    right: 200px ;
+    top: -20px;
 
 }
 .project-5{
     top: -1040px; 
-    right: -180px;
+    right: -280px;
 } 
-
+}
 .magic-wall_item{
     position: absolute;
     top: 0;
@@ -716,7 +761,7 @@ h2{
 #contact {
     padding: 2rem;
     background-color: #fff; /* O el color que prefieras */
-    color: #333;
+    color: black;
 }
 
 #contact h2 {
@@ -732,15 +777,22 @@ h2{
 .contact-button2 {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #08fdd8;
-    color: #fff;
+    background-color: transparent;
+    color: black;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    border-bottom: 2px solid #420fe7;
+    border-top: 2px solid #420fe7;
     margin-bottom: 1rem;
+    transform: skewX(-10deg);
+
 }
 
 .contact-button2:hover {
-    background-color: #06c1a3;
+    background-color: #420fe7;
+    color: #fff;
+    border-radius: 10px;
+    transition: all .5s ease;
 }
 
 .social-links {
@@ -750,12 +802,12 @@ h2{
 
 .social-links a {
     text-decoration: none;
-    color: #08fdd8;
+    color: black;
     margin-bottom: 0.5rem;
 }
 
 .social-links a:hover {
-    color: #06c1a3;
+    color: #420fe7;
 }
 @media screen and (max-width: 1000px) {
     tspan{
@@ -911,18 +963,14 @@ h2{
         top: 700px;
     }
     .fake-magicwall{
-        padding-left: 10rem;
-        
+        padding-left: 10rem;   
     }
-    
     .project{
         width: 242px;
         height: 236px;
         margin-left: 4rem;
         justify-content: center;
         align-items: center;
-
-        
     }
     #section-about{
         flex-direction: row;
@@ -937,6 +985,62 @@ h2{
     }
     .skills-charts{
         margin-right: 70px;
-        
     }
+    #home-magicwall{
+        padding-left: 15rem; 
+        max-height: 325vh;
+    }
+    .fake-magicwall .project{
+        list-style: none;
+        display: flex;
+        margin: 0;
+        margin-left: 20rem;
+        margin-top: 2rem;
+        justify-content: space-between;
+        border: 2px solid transparent;
+    
+    }
+    .fake-magicwall .project{
+        width: 41vw;
+        height: 80vh;
+        position: relative;
+        overflow: hidden;
+    }
+     .project-1 {
+        right: -320px;
+    }
+    
+    .project-2 .magic-wall_item .lazyload{
+        width: 70%;
+        height: 90vh;
+    }
+    
+    .fake-magicwall .project-2{
+        width: 35%;
+        height: 90vh;  
+        top: -350px;
+        right: 360px ;
+    }
+    .project-3{
+        top: -600px;
+        right: -300px;
+    }
+    .fake-magicwall .project-4{
+        width: 40%;
+    
+    }
+    .project-4{
+        top: -760px;
+        right: 400px;
+    
+    }
+    .fake-magicwall .project-5{
+        width: 60%;
+    
+    }
+    .project-5{
+        top: -1040px; 
+        right: -280px;
+    } 
+    
 }
