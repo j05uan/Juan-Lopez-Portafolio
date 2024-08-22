@@ -553,7 +553,6 @@ tspan{
 }
 #header{
     font-size: 2rem;
-    /* border: 2px solid #fff ; */
     margin-bottom: 30px;
     color: transparent;
 }
@@ -576,7 +575,7 @@ h2{
     font-family: "Averta",sans-serif;
     font-size: 9vw;
     color: rgba(0,0,0,0);
-    -webkit-text-stroke: 1px #CECAE3;
+    -webkit-text-stroke: 2px #CECAE3;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -592,7 +591,7 @@ h2{
     display: block;
     justify-content: space-between;
     padding-left: 30rem;
-    padding: 0; 
+    padding: 0;
     margin: 0;
     max-height: 100vh;
 }
@@ -606,7 +605,7 @@ h2{
     list-style: none;
     display: flex;
     margin: 0;
-    margin-left: 20rem;
+    margin-left: 15rem;
     margin-top: 2rem;
     justify-content: space-between;
     border: 2px solid transparent;
@@ -625,7 +624,7 @@ h2{
     top: -20px;
 }
 .fake-magicwall .project-1 .hover-content p{
-    padding-left: 15px;
+    padding-left: 10px;
 }
  .project-1 {
     right: 70px;
@@ -865,7 +864,7 @@ h2{
     }
 
     #section-home{
-        padding-left: 13rem;
+        padding-left: 90px;
     }
     .text-zone{
         font-size: 6.3rem;
@@ -909,7 +908,7 @@ h2{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 100px;
+        padding-left: 90px;
 
 
     }
@@ -1056,6 +1055,7 @@ h2{
 }
 .content-about {
     padding: 0 40px;
+    left: 140px;
 }
 .content-about .about-title {
     box-sizing: border-box;
