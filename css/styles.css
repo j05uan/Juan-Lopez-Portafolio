@@ -1051,3 +1051,341 @@ h2{
     } 
     
 }
+*{
+    -webkit-text-size-adjust: 100%;
+}
+.content-about {
+    padding: 0 40px;
+}
+.content-about .about-title {
+    box-sizing: border-box;
+    padding-left: 140px;
+    animation: anim-text 1100ms cubic-bezier(0, 0.45, 0.15, 1)
+}
+
+.content-about .about-title h2 {
+    margin-top: 40px
+}
+
+.content-about .about-intro {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 140px;
+    margin-top: 40px
+}
+
+.content-about .about-intro .about-text {
+    padding-top: 4%;
+    box-sizing: border-box;
+    width: 40%;
+    animation: anim-text 1150ms cubic-bezier(0, 0.45, 0.15, 1)
+}
+
+.content-about .about-intro .about-picture {
+    width: 50%;
+    z-index: 20;
+    animation: anim-text 1200ms cubic-bezier(0, 0.45, 0.15, 1)
+}
+
+.content-about .about-intro .about-picture img {
+    width: 100%
+}
+
+.content-about .about-services {
+    display: flex;
+    margin-top: -6%;
+    animation: anim-text 1250ms cubic-bezier(0, 0.45, 0.15, 1)
+}
+
+.content-about .about-services .content-services {
+    background-color: #EEA1BE;
+    box-sizing: border-box;
+    padding: 100px 140px;
+    margin-top: 110px;
+    width: 65%
+}
+
+.content-about .about-services .content-services p {
+    color: #52436C
+}
+
+.content-about .about-services .content-services .text {
+    margin: 40px 0
+}
+
+.content-about .about-services .content-services ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0
+}
+
+.content-about .about-services .content-services ul li {
+    width: 46%;
+    font-family: "Averta",sans-serif;
+    font-size: 24px;
+    color: #18033C
+}
+
+.content-about .about-services .content-services ul li p {
+    margin-top: 20px
+}
+
+.content-about .about-services .content-services ul li:nth-child(3),.content-about .about-services .content-services ul li:nth-child(4) {
+    margin-top: 30px
+}
+
+.content-about .about-services .resume {
+    margin: 220px 0 0 60px;
+    width: 23%;
+    animation: anim-text 1250ms cubic-bezier(0, 0.45, 0.15, 1)
+}
+
+.content-about .about-services .resume h3 {
+    display: flex;
+    align-items: center;
+    color: #F3F2F4
+}
+
+.content-about .about-services .resume h3 svg {
+    margin-right: 14px
+}
+
+.content-about .about-services .resume p {
+    margin-bottom: 30px
+}
+
+.content-about .about-services .resume a {
+    border: 1px solid #574CF2;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 200ms, border 200ms
+}
+
+.content-about .about-services .resume a:hover {
+    background-color: #18033C;
+    color: #F3F2F4;
+    border: 1px solid #18033C
+}
+
+.content-about .about-process {
+    margin: 120px 0 0 140px;
+    animation: anim-text 1250ms cubic-bezier(0, 0.45, 0.15, 1)
+}
+@keyframes anim-text {
+    0% {
+        transform: skew(0, 10deg) rotate(10deg) translate(200px, 1400px);
+        opacity: 0
+    }
+
+    60% {
+        transform: skew(0, 10deg) rotate(10deg) translate(200px, 1400px);
+        opacity: 0
+    }
+
+    100% {
+        transform: skew(0, 0) rotate(0) translate(0, 0);
+        opacity: 1
+    }
+}
+.content-about .about-process .process-content {
+    margin-left: 140px;
+    width: 70%
+}
+
+.content-about .about-process .process-content .intro-text {
+    width: 80%;
+    margin: 40px 0
+}
+
+.content-about .about-process .process-content ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0
+}
+
+.content-about .about-process .process-content ul li {
+    list-style: none;
+    width: 22%
+}
+
+.content-about .about-process .process-content ul li h3 {
+    color: #F3F2F4
+}
+
+.content-about .about-process .process-content ul li .number {
+    font-family: "Averta",sans-serif;
+    color: #F3F2F4;
+    font-size: 26px;
+    background-color: #18033C;
+    width: 80px;
+    height: 80px;
+    padding: 35px 20px 20px 20px;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px
+}
+
+
+
+.content-about .yeah {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    margin: 120px 0 0 140px;
+    animation: anim-text 1250ms cubic-bezier(0, 0.45, 0.15, 1)
+}
+
+.content-about .yeah .tag {
+    margin-bottom: 20px
+}
+
+.content-about .yeah .title {
+    font-size: 56px;
+    color: #F3F2F4;
+    font-family: "Averta",sans-serif
+}
+
+.content-about .yeah p {
+    margin: 20px 0
+}
+
+.content-about .yeah .contact {
+    margin-top: 40px
+}
+
+@media (min-width: 834px) and (max-width: 1300px) {
+    .content-about .about-title {
+        padding-left:0px
+    }
+
+    .content-about .about-intro {
+        padding-left: 0px
+    }
+
+    .content-about .about-intro .about-text {
+        width: 50%
+    }
+
+    .content-about .about-intro .about-picture {
+        width: 45%
+    }
+
+    .content-about .about-services {
+        margin-top: 60px;
+        flex-direction: column
+    }
+
+    .content-about .about-services .content-services {
+        width: 100%;
+        padding: 60px 80px
+    }
+
+    .content-about .about-services .resume {
+        margin: 8px 0 0 60px
+    }
+
+    .content-about .about-process {
+        margin: 80px 0 0 0
+    }
+
+    .content-about .about-process .process-content {
+        margin-left: 60px;
+        width: 90%
+    }
+
+
+    .content-about .yeah .title {
+        font-size: 7vw
+    }
+}
+
+@media (min-width: 320px) and (max-width: 833px) {
+    .content-about {
+        padding:0 30px
+    }
+
+    .content-about .about-title {
+        padding-left: 0px
+    }
+
+    .content-about .about-intro {
+        flex-direction: column-reverse;
+        padding-left: 0px
+    }
+
+    .content-about .about-intro .about-text {
+        width: 100%;
+        padding-top: 0px
+    }
+
+    .content-about .about-intro .about-picture {
+        width: 100%;
+        margin-bottom: 40px
+    }
+
+    .content-about .about-services {
+        margin-top: 60px;
+        flex-direction: column
+    }
+
+    .content-about .about-services .content-services {
+        width: 100%;
+        padding: 40px 40px
+    }
+
+    .content-about .about-services .content-services ul {
+        justify-content: center
+    }
+
+    .content-about .about-services .content-services ul li {
+        width: 100%
+    }
+
+    .content-about .about-services .resume {
+        width: 100%;
+        margin: 8px 0 0 0px
+    }
+
+    .content-about .about-process {
+        margin: 80px 0 0 0
+    }
+
+    .content-about .about-process .process-content {
+        margin-left: 0px;
+        width: 100%
+    }
+
+    .content-about .about-process .process-content .intro-text {
+        width: 100%
+    }
+
+    .content-about .about-process .process-content ul {
+        flex-wrap: wrap
+    }
+
+    .content-about .about-process .process-content ul li {
+        width: 50%
+    }
+
+    .content-about .about-process .process-content ul li:nth-child(3),.content-about .about-process .process-content ul li:nth-child(4) {
+        margin-top: 40px
+    }
+
+
+    .content-about .yeah {
+        width: 100%;
+        margin: 60px 0 0 0
+    }
+
+    .content-about .yeah .title {
+        font-size: 7vw
+    }
+}
