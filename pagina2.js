@@ -1,3 +1,4 @@
+
 const aboutMe= async ()=>{
    
     const contenedor = document.getElementById('ChangePage');
@@ -143,8 +144,8 @@ const aboutMe= async ()=>{
 
 const home= async ()=>{
    
-    const contenedor = document.getElementById('ChangePage');
-    contenedor.innerHTML = `
+    const contenedor2 = document.getElementById('ChangePage');
+    contenedor2.innerHTML = `
     <section id="section-home" class="section-home">
     <div class="text-zone">
         <h1>
