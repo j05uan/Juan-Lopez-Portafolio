@@ -351,7 +351,7 @@ header{
 }
 #email{
     padding-left: 6px;
-    padding-bottom: 0;
+    padding-bottom: 0px;
     padding-right: 180px;
     left: 80px;
     display: flex;
@@ -1401,8 +1401,14 @@ h2{
         font-size: 7vw
     }
 }
-.back{
-    border: none;
+#backhome a{
+    /* display: none; */
+    font-size: 2rem;
+    text-decoration: none;
     background: transparent;
-    color: salmon;
+    color: #fff;
+    position: absolute; 
+    top: 90px; 
+    left: 1500px;
+    font-family: sans-serif;
 }

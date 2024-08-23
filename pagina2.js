@@ -1,7 +1,9 @@
-
-const home= async ()=>{
+    const home= async ()=>{
    
     const contenedor2 = document.getElementById('ChangePage');
+    const back = document.getElementById('backhome');
+
+    
     contenedor2.innerHTML = `
     <section id="section-home" class="section-home">
     <div class="text-zone">
@@ -206,7 +208,10 @@ const home= async ()=>{
     <a href="tel:+573001234567"><i class="bi bi-telephone-fill"></i> Teléfono</a>
 </div>
     `;
-    
+    back.innerHTML = `
+        <a  href="#" onclick="aboutMe()"> <i class="bi bi-house-heart"></i> About me</a>
+    `;
+
 }
 
 
@@ -214,11 +219,12 @@ const home= async ()=>{
 const aboutMe= async ()=>{
    
     const contenedor = document.getElementById('ChangePage');
+    const back = document.getElementById('backhome');
     contenedor.innerHTML = `
       
     <div class="content-about">
         <div class="about-title">
-        <button class="back" onclick=home() > Come Back Home</button>
+
 
             <h2 class="tag">About &amp;Services</h2>
             <p>
@@ -328,14 +334,10 @@ const aboutMe= async ()=>{
             <span class="title">
                 Interested &nbsp;?<br>Lets Get In Touch &nbsp;!
             </span>
-            <div class="contact">
-                <div class="icon">
-                    <svg width="16" height="11" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M.254 10.188H15.12V.438H.254v9.75zm2.403-8.635h10.075L7.72 4.923l-5.062-3.37zm-1.287.484l6.352 4.228 6.283-4.222v7.03H1.37V2.037z" fill="#FFFFFF" fill-rule="evenodd"/>
-                    </svg>
-                </div>
-                <span class="mail" data-status="Click to Copy!">lopezamayajuanpablo@gmail.com</span>
-            </div>
+            <span class="text">
+                I am currently available for freelance opportunities or full-stack development roles. My goal is to contribute to your team and collaborate on exciting projects that drive growth and innovation. With a strong foundation in both front-end and back-end technologies, I am eager to bring my skills and passion for technology to a dynamic team. Together, we can tackle challenges, achieve our objectives, and grow professionally and personally. I look forward to the possibility of working with you and making a positive impact on your projects.
+            </span>
+            
         </div>
         
     </div>
@@ -354,6 +356,9 @@ const aboutMe= async ()=>{
     
 `;
     
+    back.innerHTML = `
+        <a  href="#" onclick="home()"> <i class="bi bi-house-heart"></i> Back Home</a>
+    `;
 }
 
 
