@@ -766,7 +766,12 @@ h2{
 }
 #contact {
     padding: 2rem;
-    background-color: #fff; /* O el color que prefieras */
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
     color: black;
 }
 
@@ -803,7 +808,8 @@ h2{
 
 .social-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 .social-links a {
@@ -1394,4 +1400,9 @@ h2{
     .content-about .yeah .title {
         font-size: 7vw
     }
+}
+.back{
+    border: none;
+    background: transparent;
+    color: salmon;
 }
