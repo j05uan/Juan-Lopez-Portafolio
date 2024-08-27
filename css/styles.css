@@ -608,7 +608,7 @@ h2{
     list-style: none;
     display: flex;
     margin: 0;
-    margin-left: 15rem;
+    margin-left: 90px;
     margin-top: 2rem;
     justify-content: space-between;
     border: 2px solid transparent;
@@ -729,8 +729,8 @@ h2{
     
 }
 .hover-content p{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .fake-magicwall .project:hover a.colorbox{
     transform: scale(0.6);
@@ -994,7 +994,7 @@ h2{
     }
     #section-about{
         flex-direction: row;
-        padding-left: 13rem;
+        padding-left: 100px;
     }
     .text-zone3 #header {
         width: 50px;
@@ -1007,7 +1007,7 @@ h2{
         margin-right: 70px;
     }
     #home-magicwall{
-        padding-left: 15rem; 
+        padding-left: 9rem; 
         max-height: 325vh;
     }
     .fake-magicwall .project{
