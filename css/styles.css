@@ -845,7 +845,9 @@ h2{
     header{
         justify-content: flex-end;
     }
-    
+      #backhome a{
+        left: 1400px;
+    }
     tspan{
         font-size: 1vw;
         line-height: 14vw;
@@ -1400,6 +1402,9 @@ h2{
     .content-about .yeah .title {
         font-size: 7vw
     }
+    #backhome a{
+        left: 1400px;
+    }
 }
 #backhome a{
     /* display: none; */
@@ -1409,6 +1414,6 @@ h2{
     color: #fff;
     position: absolute; 
     top: 90px; 
-    left: 1500px;
+    left: 850px;
     font-family: sans-serif;
 }
