@@ -65,7 +65,7 @@
                 <span class="bg"></span>
                 <span class="base"></span>
                 <span class="icon"><i class="bi bi-envelope"></i></span>
-                <span class="mail" data-status="Click to Copy!" class="text">lopezamayajuanpablo@gmail.com</span>
+                <span class="mail" href="https://www.canva.com/design/DAGKCLCYOZY/huV186i9nw5NnCKlZtnaZA/edit?utm_content=DAGKCLCYOZY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" data-status="Click to Copy!" class="text">lopezamayajuanpablo@gmail.com</span>
             </div>
         </a>
     </div>
