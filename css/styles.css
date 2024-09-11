@@ -1078,7 +1078,7 @@ h2{
 }
 
 .content-about .about-title h2 {
-    margin-top: 40px
+    margin-top: 100px
 }
 
 .content-about .about-intro {
@@ -1413,7 +1413,7 @@ h2{
     background: transparent;
     color: #fff;
     position: absolute; 
-    top: 90px; 
+    top: 60px; 
     left: 850px;
     font-family: sans-serif;
 }
